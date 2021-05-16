@@ -1,0 +1,19 @@
+{
+  "name": "blog-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.0.0",
+    "marked": "^2.0.3",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.2"
+  }
+}
