@@ -7,9 +7,9 @@ for (let f of files.filter(f => f.endsWith('.js'))) {
     let routers = require(__dirname + '/controllers/' + f);
     for (let r in routers) {
         if (r.startsWith('GET')) {
-            router.get(r.slice(4), routers[r]);
+            router.get('/backend' + r.slice(4), routers[r]);
         } else if (r.startsWith('POST')) {
-            router.post(r.slice(5), routers[r]);
+            router.post('/backend' + r.slice(5), routers[r]);
         }
     }
 }
